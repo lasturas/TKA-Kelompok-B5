@@ -1,7 +1,4 @@
 # TKA-Kelompok-B5
-
---
-
 ### Anggota Kelompok B5 :
 - Farida Qurrotu A'yuna 5027231015
 
@@ -13,7 +10,9 @@
 
 - Syela Zeruya Tandi Lalong 5027231076
   
---
+---
+
+## Daftar Isi
 
 ### Study Case
 
@@ -21,7 +20,7 @@ Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kem
 
 Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentiment Analysis dengan komponen Backend menggunakan python: sentiment-analysis.py dengan spesifikasi sebagai berikut
 
---
+---
 
 ### Endpoint
 
@@ -65,11 +64,57 @@ Kemudian juga disediakan sebuah Frontend sederhana menggunakan index.html dan st
 
 Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutuhan aplikasi tersebut. Apabila dana maksimal yang diberikan adalah 1 juta rupiah per bulan (65 US$) konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 
---
+---
 
-### Hasil Final Project
+## Hasil Final Project
 
+### Rancangan Arsitektur
 
+![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/1bec5696-fbb1-4426-9d7d-566839c1c72d)
 
+### Tabel Harga
 
+|NO|Nama|Spesifikasi|Fungsi|Harga/Bulan|
+|--|--|--|--|--|
+|1|TKAB5-VM1|1 Intel vCPU / 2GB Memory / 50GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|App Worker 1|12$| 
+|2|TKAB5-VM2|1 Intel vCPU / 2GB Memory / 50GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|App Worker 2|12$| 
+|3|TKAB5-VM3-DB|2 Intel vCPU / 2GB Memory / 60GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|Mongo Database|18$| 
+|4|TKAB5-VM4-LOAD|2 Intel vCPU / 2GB Memory / 60GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|Load Balancer (Round Robin)|18$|
 
+### Cara Pengerjaan
+### Database
+
+1. Buka terminal windows dan hubungkan ke terminal VM
+
+       ssh root@152.42.238.180
+   ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/79723b83-1a53-4516-b123-f44a37d399ba)
+
+2. Install MongoDB
+   
+        sudo apt update
+        sudo apt upgrade
+    
+        # Install Dependency
+        sudo apt install gnupg wget apt-transport-https ca-certificates software-properties-common
+        echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list
+        sudo apt-get update
+        sudo apt-get install libssl1.1
+    
+        # Install MongoDB
+        curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+        echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+        sudo apt update
+        sudo apt install mongodb-org
+
+3. Akses MongoDB
+
+       sudo systemctl start mongod
+       sudo systemctl enable mongod
+
+4. Konfigurasi MongoDB
+
+       sudo nano /etc/mongod.conf
+   
+   
+   
+    
