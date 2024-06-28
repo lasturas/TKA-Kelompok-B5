@@ -208,7 +208,7 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 ### Load-Balancer 
 
-1. Sambunkan terminal VM
+1. Sambungkan terminal VM
 
 2. Install Nginx
 
