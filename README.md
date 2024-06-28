@@ -153,7 +153,7 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 
 
-### Konfigurasi VM-1 & VM-2 (Worker)
+### Konfigurasi Worker (VM-1 & VM-2)
 
 1. Sambungkan terminal Windows dengan terminal VM
 
@@ -204,3 +204,5 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 10. Run `sentiment-analysis.py`
 
 11. Lakukan testing dengan query untuk memastikan apakah bisa berjalan dengan lancar
+
+### Konfigurasi Load-Balancer
