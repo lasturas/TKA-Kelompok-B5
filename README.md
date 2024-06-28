@@ -153,7 +153,7 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 
 
-### Konfigurasi Worker (VM-1 & VM-2)
+### Worker (VM-1 & VM-2)
 
 1. Sambungkan terminal Windows dengan terminal VM
 
@@ -205,4 +205,25 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 11. Lakukan testing dengan query untuk memastikan apakah bisa berjalan dengan lancar
 
-### Konfigurasi Load-Balancer
+
+### Load-Balancer 
+
+1. Sambunkan terminal VM
+
+2. Install Nginx
+
+       sudo apt update
+       sudo apt upgrade -y
+       sudo apt install nginx -y
+
+3. Konfigurasi file `default` pada `/etc/nginx/sites-enabled/default`
+
+4. Restart Nginx
+
+       sudo sevice nginx restart
+
+5. Refresh page berkali-kali untuk test load-balancer
+
+
+
+
