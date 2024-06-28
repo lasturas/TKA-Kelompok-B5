@@ -204,6 +204,3 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 10. Run `sentiment-analysis.py`
 
 11. Lakukan testing dengan query untuk memastikan apakah bisa berjalan dengan lancar
-
-
-### 
