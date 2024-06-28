@@ -116,5 +116,41 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
        sudo nano /etc/mongod.conf
    
    
-   
-    
+5. Restart MongoDB   
+
+       sudo systemctl restart mongod
+
+
+6. Buka port Firewall
+
+       sudo ufw allow <<PORT>>
+
+7. Buka shell MongoDB
+
+       mongo
+
+8. Masuk sebagai `Admin`
+
+       use admin
+
+9. Buat user `Admin`
+
+       db.createUser({
+       user: "KelompokTKAB5",
+       pwd: "KelompokTKAB5",
+       roles: [{ role: "userAdminAnyDatabase", db: "admin" }]
+       })
+
+10. Check user yang dibuat
+
+        db.getUser("KelompokTKAB5")
+
+11. Sambungkan ke MongoDBCompass
+
+        mongodb://146.190.102.47:<<PORT>>
+
+12. Konfigurasi database selesai/berhasil ketika sudah bisa terhubung dengan Compass.
+
+
+
+### Konfigurasi VM-1 (Worker)
