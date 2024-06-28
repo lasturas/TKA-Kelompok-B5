@@ -154,3 +154,39 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 
 ### Konfigurasi VM-1 (Worker)
+
+1. Sambungkan terminal Windows dengan terminal VM
+
+2. Download semua resource yang diperlukan
+
+       << GITHUB >>
+
+3. Install `Nginx`
+
+       sudo apt update
+       sudo apt upgrade -y
+       sudo apt install nginx -y
+
+4. Install dependensi python
+
+       sudo apt update
+       sudo apt install python3 -y
+       sudo apt install python3-pip -y
+       sudo apt install python3.12-venv
+
+       python3 -m venv myenv
+       source myenv/bin/activate
+
+       pip install flask
+       pip install flask_cors
+       pip install gunicorn
+       pip install flask_pymongo
+       pip install textblob
+       pip install pymongo
+       pip install gevent
+
+5. Pindahkan file `index.html` kedalam `/var/www/html`
+
+       mv index.html /var/www/html/index.html
+
+6. 
