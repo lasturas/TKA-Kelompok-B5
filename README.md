@@ -153,7 +153,7 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 
 
-### Konfigurasi VM-1 (Worker)
+### Konfigurasi VM-1 & VM-2 (Worker)
 
 1. Sambungkan terminal Windows dengan terminal VM
 
