@@ -185,8 +185,25 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
        pip install pymongo
        pip install gevent
 
-5. Pindahkan file `index.html` kedalam `/var/www/html`
+5. Pindah file `index.html` kedalam `/var/www/html`
 
        mv index.html /var/www/html/index.html
 
-6. 
+6. Fetch pada index.html agar mengarah ke ip worker
+
+7. Konfigurasi /etc/nginx/sites-enabled/default
+
+   Tambahkan route ke endpoint /analyze dan /history
+
+8. Konfigurasi IP Database pada `sentiment-analysis.py` agar tersambung
+
+9. Lalu restart Nginx
+
+        bash sudo service nginx restart
+
+10. Run `sentiment-analysis.py`
+
+11. Lakukan testing dengan query untuk memastikan apakah bisa berjalan dengan lancar
+
+
+### 
