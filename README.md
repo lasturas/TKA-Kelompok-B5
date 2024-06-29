@@ -81,6 +81,8 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 |3|TKAB5-VM3-DB|2 Intel vCPU / 2GB Memory / 60GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|Mongo Database|18$| 
 |4|TKAB5-VM4-LOAD|2 Intel vCPU / 2GB Memory / 60GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|Load Balancer (Round Robin)|18$|
 
+![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/d5ce1754-64b1-43b3-b2cd-c8e931211916)
+
 ### Cara Pengerjaan
 ### Database
 
@@ -151,15 +153,18 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 12. Konfigurasi database selesai/berhasil ketika sudah bisa terhubung dengan Compass.
 
-
+![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/feab3897-1d3a-4cc7-95ee-b35b73a43e7e)
 
 ### Worker (VM-1 & VM-2)
 
 1. Sambungkan terminal Windows dengan terminal VM
 
 2. Download semua resource yang diperlukan
-
-       << GITHUB >>
+   
+   ```
+     wget https://raw.githubusercontent.com/fuaddary/fp-tka/main/Resources/FE/index.html
+     wget https://raw.githubusercontent.com/fuaddary/fp-tka/main/Resources/FE/styles.css
+   ```
 
 3. Install `Nginx`
 
@@ -272,11 +277,23 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 5. Refresh page berkali-kali untuk test load-balancer
 
-- Berikut adalah dokumentasi untuk test load-balancer:
+- Berikut adalah dokumentasi untuk test load-balancer pada Locust:
+
+- Uji RPS dalam waktu 60 detik
   ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/dd4df3d2-f0fd-4dd2-860f-0a4492b7c975)
+- Uji user yang aktif dengan spawn rate 50
   ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/826d882f-73aa-41cf-8ff9-730f84729341)
+- Uji user yang aktif dengan spawn rate 100
   ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/72b7297c-5a98-4894-af80-e6f78622b6c9)
+- Uji user yang aktif dengan spawn rate 200
   ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/ae275040-660d-49cc-ab31-293f59584a50)
+- Uji user yang aktif dengan spawn rate 500
+  ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/211275e3-9346-43b1-90aa-e979f72c38ee)
+
+
+## Video Demo Revisi FP TKA B5
+
+
 
 
 
