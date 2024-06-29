@@ -205,6 +205,11 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 11. Lakukan testing dengan query untuk memastikan apakah bisa berjalan dengan lancar
 
+- VM1
+  ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/f4e7258a-ce5f-4686-9c0a-0b56dfc80039)
+- VM2
+  ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/719f3903-341d-4a4c-82f7-f55bdc4a66c0)
+
 
 ### Load-Balancer 
 
@@ -267,7 +272,7 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 5. Refresh page berkali-kali untuk test load-balancer
 
-
+- Berikut adalah dokumentasi untuk test load-balancer:
   ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/dd4df3d2-f0fd-4dd2-860f-0a4492b7c975)
   ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/826d882f-73aa-41cf-8ff9-730f84729341)
   ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/72b7297c-5a98-4894-af80-e6f78622b6c9)
