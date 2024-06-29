@@ -91,6 +91,8 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 |3|TKAB5-VM3-DB|2 Intel vCPU / 2GB Memory / 60GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|Mongo Database|18$| 
 |4|TKAB5-VM4-LOAD|2 Intel vCPU / 2GB Memory / 60GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|Load Balancer (Round Robin)|18$|
 
+![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/24238afe-bcb7-42cb-b4fc-452ed44b4419)
+
 ### Cara Pengerjaan
 ### Database
 
