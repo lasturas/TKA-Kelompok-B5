@@ -303,7 +303,8 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 ## Video Demo Revisi FP TKA B5
 
-
+  ```
+  https://youtu.be/5Y_r5CI5O24
 
 
 
