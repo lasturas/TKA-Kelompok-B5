@@ -218,6 +218,49 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 3. Konfigurasi file `default` pada `/etc/nginx/sites-enabled/default`
 
+        # Upstream configuration for round-robin load balancing
+        upstream round-robin {
+            server 188.166.240.157;
+            server 165.22.62.240;
+            keepalive 32;  # Maintain a pool of 32 connections to each backend server
+        }
+        
+        server {
+            listen 80 default_server;
+            listen [::]:80 default_server;
+    
+        root /var/www/html;
+    
+        index index.html index.htm index.nginx-debian.html;
+    
+        server_name _;
+    
+        location / {
+            proxy_pass http://round-robin;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    
+            # Proxy settings for improved performance
+            proxy_connect_timeout 60s;
+            proxy_send_timeout 60s;
+            proxy_read_timeout 60s;
+    
+            proxy_buffering on;
+            proxy_buffer_size 128k;
+            proxy_buffers 4 256k;
+            proxy_busy_buffers_size 256k;
+            proxy_max_temp_file_size 0;
+    
+            proxy_http_version 1.1;
+            proxy_request_buffering off;
+        }
+    
+        # Optional: Set keepalive connections to improve performance
+        keepalive_timeout 65s;
+        keepalive_requests 10000;
+        }
+    
 4. Restart Nginx
 
        sudo sevice nginx restart
