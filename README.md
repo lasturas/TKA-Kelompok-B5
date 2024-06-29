@@ -268,5 +268,10 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 5. Refresh page berkali-kali untuk test load-balancer
 
 
+  ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/dd4df3d2-f0fd-4dd2-860f-0a4492b7c975)
+  ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/826d882f-73aa-41cf-8ff9-730f84729341)
+  ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/72b7297c-5a98-4894-af80-e6f78622b6c9)
+  ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/ae275040-660d-49cc-ab31-293f59584a50)
+
 
 
