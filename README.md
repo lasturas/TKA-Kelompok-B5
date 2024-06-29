@@ -13,6 +13,16 @@
 ---
 
 ## Daftar Isi
+- [Study Case](#study-case)
+- [Endpoint](#endpoint)
+- [Hasil Final Project](#hasil-final-project)
+  - [Rancangan Arsitektur](#rancangan-arsitektur)
+  - [Tabel Harga](#tabel-harga)
+- [Cara Pengerjaan](#cara-pengerjaan)
+  - [Database](#database)
+  - [Worker VM1 dan VM2](#worker-vm1-dan-vm2)
+  - [Load-Balancer](#load-balancer)
+- [Video Demo Revisi FP TKA B5](#video-demo-revisi-fp-tka-b5) 
 
 ### Study Case
 
@@ -80,8 +90,6 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 |2|TKAB5-VM2|1 Intel vCPU / 2GB Memory / 50GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|App Worker 2|12$| 
 |3|TKAB5-VM3-DB|2 Intel vCPU / 2GB Memory / 60GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|Mongo Database|18$| 
 |4|TKAB5-VM4-LOAD|2 Intel vCPU / 2GB Memory / 60GB Disk SSD / SGP1 - Ubuntu 24.04 (LTS) x64|Load Balancer (Round Robin)|18$|
-
-![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/d5ce1754-64b1-43b3-b2cd-c8e931211916)
 
 ### Cara Pengerjaan
 ### Database
@@ -155,7 +163,7 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 ![image](https://github.com/lasturas/TKA-Kelompok-B5/assets/151950309/feab3897-1d3a-4cc7-95ee-b35b73a43e7e)
 
-### Worker (VM-1 & VM-2)
+### Worker VM1 dan VM2
 
 1. Sambungkan terminal Windows dengan terminal VM
 
